@@ -8,11 +8,14 @@ class Person:
     def print(self):
         print("My name is {0}".format(self.name))
 
-#2)인스턴스 생성
+#내여쓰기(shift+tab), 들여쓰기(tab)
+#2)인스턴스 생성(중단점을 지정)
 p1 = Person() 
-
+p2 = Person()
+p1.name = '전우치'
 #3)메서드 호출
 p1.print()
+p2.print() 
 
 
     
