@@ -11,6 +11,7 @@ d = {"apple":100, "kiwi":200, "orange":300}
 for item in d.items():
     print(item)
 
+#디버깅 모드로 실행할 때 일단 멈춤(Break Point)
 for i in [2,3,4,5,6]:
     #서식을 지정해서 변경하는 문자 
     print("---{0}단---".format(i))
@@ -20,7 +21,21 @@ for i in [2,3,4,5,6]:
 print("---break구문---")
 lst = [1,2,3,4,5,6,7,8,9,10]
 for i in lst:
+    #다중 라인 주석처리:ctrl+/   
     if i > 5:
         break
     print("Item:{0}".format(i))
 
+print("---continue구문---")
+lst = [1,2,3,4,5,6,7,8,9,10]
+for i in lst:
+    if i % 2 == 1:
+        continue
+    print("Item:{0}".format(i))
+
+#수열:규칙이 있는 숫자의 열 
+print(list(range(5)))
+print(list(range(1,11)))
+print(list(range(2000,2023)))
+#range(start,end,step)
+print(list(range(10,0,-1)))
