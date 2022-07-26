@@ -21,7 +21,10 @@ print(result[1])
 def intersect(prelist, postlist):
     #지역변수
     result = []
+    #H(0) | A(1) | M(2)
     for x in prelist:
+        #x라는 글자가 postlist에 있고 
+        #그리고 x가 result에 포함되어있지 않다면
         if x in postlist and x not in result:
             result.append(x)
     return result 
