@@ -17,7 +17,7 @@ f.close()
 # for item in lst:
 #     print(item, end="")
 
-#파일을 첨부
-f = open("c:\\work\\demo.txt", "a+", encoding="utf-8")
+#파일을 첨부(a+, wt)
+f = open("c:\\work\\demo.txt", "wt", encoding="utf-8")
 f.write("새로운 데이터\n")
 f.close() 
