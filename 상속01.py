@@ -33,5 +33,6 @@ s.printInfo()
 s.coding()
 s.eating() 
 
-
+print(issubclass(Student, Person))
+print(issubclass(Person, Student))
 
