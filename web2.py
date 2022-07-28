@@ -17,3 +17,7 @@ title = cartoons[0].find("a").text
 link = cartoons[0].find("a")["href"]
 print(title)
 print(link)
+
+for item in cartoons:
+    title = item.find("a").text.strip()
+    print(title)
