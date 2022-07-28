@@ -20,6 +20,7 @@ soup = BeautifulSoup(page, "html.parser")
 for item in soup.find_all("p"):
     #태그 내부의 문자열: .text 
     title = item.text.strip()
+    title = title.replace("\n", "")
     print(title)
 
 
