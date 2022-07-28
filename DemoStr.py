@@ -20,3 +20,19 @@ for name in names:
     print("=" * 40)
 
 
+u = "<<< spam and ham >>>"
+result = u.strip("<> ")
+print(u)
+print(result)
+result = result.replace("spam", "spam egg")
+print(result)
+lst = result.split()
+print(lst)
+print(":)".join(lst))
+
+print("MBC2580".isalnum())
+print("MBC:2580".isalnum())
+print("MBC2580".isdecimal())
+print("2580".isdecimal())
+
+
